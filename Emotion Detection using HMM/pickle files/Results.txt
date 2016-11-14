@@ -1,0 +1,27 @@
+Emotion detection of audio clip :-
+
+Problem 1 :-
+--> Dataset generation module was used to prepare the dataset.
+
+Sub system 1 :- 
+--> Number of HMMs used :- 2 
+--> GMMHMM with 2 hidden states and 1 gaussian mixture. 
+--> Efficiency :- 89%
+
+Sub system 2 :- 
+--> Number of HMMs used :- 3 
+--> GMMHMM with 3 hidden states and 1 gaussian mixture. 
+--> Efficiency :- 80%
+
+Sub system 3 :- 
+--> Number of HMMs used :- 2 
+--> GMMHMM with 2 hidden states and 1 gaussian mixture. 
+--> Efficiency :- 91.5%
+
+Duration for which shouting was detected :-
+--> File :- arvind_9.wav :- {Arvind Kejriwal :- 35 seconds (100%)}
+--> File :- host5.wav :- {Arnab :- 3 seconds (13.8 %)}
+
+Observation :- Due to less number of training examples for "Arnab shouting", the HMM could not recognize instances when Arnab was actually shouting. This led to a decreased accuracy when wav files of Arnab were tested.
+
+Total efficiency of the combined system :- 86.83%
